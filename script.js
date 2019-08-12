@@ -67,16 +67,16 @@ var favoriteFoodSentence = `My top two favorite foods are ${
   favoriteFoods[0]
 }, ${favoriteFoods[1]}, ${favoriteFoods[2]}`;
 
-console.log(favoriteFoodSentence);
+// console.log(favoriteFoodSentence);
 
 // Use .push() to add some foods to your array
-console.log("before sushi", favoriteFoods);
+// console.log("before sushi", favoriteFoods);
 favoriteFoods.push("sushi");
-console.log("after sushi", favoriteFoods);
+// console.log("after sushi", favoriteFoods);
 
 // Reassign one of the elements in your array
 favoriteFoods[3] = "beef tacos";
-console.log("after reassigning 4 to beef tacos", favoriteFoods);
+// console.log("after reassigning 4 to beef tacos", favoriteFoods);
 
 //------------------------------- LIGHTNING EXERCISE-----------------------//
 // Create an array of your pet names
@@ -103,10 +103,10 @@ var hoagieInfo = {
   }
 };
 
-console.log(hoagieInfo.nicknames[1]);
-console.log(hoagieInfo.food.brand);
+// console.log(hoagieInfo.nicknames[1]);
+// console.log(hoagieInfo.food.brand);
 
-console.log(hoagieInfo.name);
+// console.log(hoagieInfo.name);
 
 // Dot notation vs. bracket notation
 console.log(`${hoagieInfo["name"]} is a ${hoagieInfo["species"]}`);
@@ -118,31 +118,68 @@ hoagieInfo.favoriteToy = "Tennis ball";
 // We can put objects inside an array! And objects can have arrays as values.
 var names = ["jordan", "melody"];
 var cohortTwoPets = [
-    {
-        owner: "Alex",
-        name: "Morose",
-        age: 5
-    },
-    {
-        owner: "Levi",
-        name: "Tink",
-        age: 12
-    }
-]
+  {
+    owner: "Alex",
+    name: "Morose",
+    age: 5
+  },
+  {
+    owner: "Levi",
+    name: "Tink",
+    age: 12
+  }
+];
 
-console.log(cohortTwoPets)
-console.log(cohortTwoPets[0])
-console.log(cohortTwoPets[0].name)
-
-
+// console.log(cohortTwoPets)
+// console.log(cohortTwoPets[0])
+// console.log(cohortTwoPets[0].name)
 
 // ------------------------------------ BREAK -----------------------------------//
 // ------------------------- lightning exercises --------------------//
 // Given two options of data structures - array or object - which should you use? You need to represent a red 2015 Ford Mustang in your code.
 
-// Given two options of data structures - array or object - which should you use? You need to store list of animal names in a shelter. The names are "Kippers", "Jack", "Gypsy", "Angus", "Seymour Bouts", and "Sharky".
+var mustang = {
+  color: "red",
+  year: 2015,
+  make: "Ford",
+  model: "Mustang"
+};
 
-// Define an object for four family members, and put each object in an array named familyMembers. Each family member object that you create should have the same keys on them, but the values will be different.
+// Given two options of data structures - array or object - which should you use? You need to store list of animal names in a shelter. The names are "Kippers", "Jack", "Gypsy", "Angus", "Seymour Bouts", and "Sharky".
+var animalNames = [
+  "Kippers",
+  "Jack",
+  "Gypsy",
+  "Angus",
+  "Seymour Bouts",
+  "Sharky"
+];
+
+// Define four object for four family members, and put each object in an array named familyMembers. Each family member object that you create should have the same keys on them, but the values will be different.
+
+var mom = {
+  name: "May",
+  favoriteFood: "pasta"
+};
+
+var dad = {
+  name: "Paul",
+  favoriteFood: "Curry"
+};
+
+var familyMembers = [mom, dad];
+// console.log(familyMembers)
+
+// var familyMembers = [
+//     {
+//         name: "May",
+//         favoriteFood: "pasta"
+//     },
+//     {
+//         name: "Paul",
+//         favoriteFood: "Curry"
+//     }
+// ]
 
 // Given the object below, output the wardrobe's width to the console
 // Output its manufacturer
@@ -155,31 +192,94 @@ var wardrobe = {
   width: 50
 };
 
-// -------------------------------- CONDITIONALS -----------------------------------//
+// console.log(wardrobe.width)
+// console.log(wardrobe.manufacturer)
+// console.log(wardrobe.contents[0])
+
+// -------------------------------- CONDITIONALS ---------------------------------//
 // if
+// var likesDogs = false
+
+// if(likesDogs){
+//     console.log("You have excellent taste in pets")
+// }
+
+// var likesCats = "yes"
+
+// if(likesCats === "yes"){
+//     console.log("weird but okay")
+// }
+
+// if(1+1 === 2){
+//     console.log("Math is okay")
+// }
+
+// console.log(1+1 === 3)
 
 // if / else
+var favoritePet = "parakeet";
 
-// if // else if // else
+if (favoritePet === "dog") {
+  console.log("woooof");
+} else if (favoritePet === "parakeet") {
+  console.log("tweet tweet");
+} else if (favoritePet === "cat") {
+  console.log("meow");
+} else {
+  console.log("have you considered petting a dog?");
+}
 
-// --------------------------------- LOOPS ----------------------------------------//
-// ----------------------------- LIGHTNING EXERCISE -------------------------------//
+var isHungry = true;
+var time = "12:00 PM";
+var day = "Monday";
+
+if (isHungry === true && time === "12:00 PM" && day === "Monday") {
+  console.log("time for lunch");
+} else if (isHungry === true || time === "12:00 PM") {
+  console.log("time for a snack");
+} else {
+  console.log("No food food for yooou");
+}
+
+// --------------------------------- LOOPS -----------------//
+
 // Print each value in the array to the console using square bracket notation
-var alumni = ["Nick", "Charles", "Nikki", "Dale"];
+var alumni = ["Nick", "Charles", "Nikki", "Dale", "Bobby"];
+// console.log(alumni[0])
+// console.log(alumni[1])
+// console.log(alumni[2])
+// console.log(alumni[3])
 
-// while loop
-var counter = 1;
-
-while (counter <= 5) {
-  // console.log("FREE TACOS!!!", counter);
+var counter = 0;
+console.log(alumni.length);
+while (counter <= alumni.length) {
+  console.log("this is counter", counter);
+  console.log(alumni[counter]);
   counter = counter + 1;
 }
 
-var tacoToppings = ["beef", "lettuce", "sour cream", "cheese"];
+// if(counter === 0){
+//     console.log("it's 0!", counter)
+// }
+// while(counter < 5){
+//     console.log(`${counter} is less than five`)
+//     counter = counter + 1
+// }
 
-// print each taco topping to the console with a while loop
+var cohortTwoVolunteers = ["Levi", "Jessica", "Lance", "Alex"];
 
-// print each taco topping to the console with a for loop
+for (var counter = 0; counter < cohortTwoVolunteers.length; counter = counter + 1) {
+    console.log("counter in student volunteers loop", counter)
+    console.log(cohortTwoVolunteers[counter])
+}
+
+// var jordanCounter = 0;
+
+// while(jordanCounter < cohortTwoVolunteers.length){
+//     console.log(cohortTwoVolunteers[jordanCounter])
+//     // high five cohortTwoVolunteers[counter]
+//     jordanCounter = jordanCounter + 1
+// }
 
 // -------------------------- LIGHTNING EXERCISE ----------------------------------//
 // Print each value in the array to the console using a for loop
@@ -199,6 +299,19 @@ var alumni = [
   "Russ",
   "Bobby"
 ];
+
+for(var i=0; i < alumni.length; i++){
+    console.log(alumni[i])
+    if(alumni[i] === "Tommy"){
+        console.log("great job doin the things")
+    }
+
+}
+
+
+
+
+
 
 // What happens if we need to loop through an array inside an object?
 var newForce = {
@@ -220,4 +333,15 @@ var newForce = {
     "Bobby"
   ],
   instructors: ["Tommy", "Josh", "Jordan"]
-};
+}
+
+for(var i = 0; i < newForce.instructors.length; i++){
+    console.log(newForce.instructors[i])
+}
+
+
+var foods = ["banana", "apple", "peanut butter"]
+
+foods.push("ham")
+
+console.log(foods.length)
