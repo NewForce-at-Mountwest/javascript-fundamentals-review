@@ -19,7 +19,7 @@ As always, these exercises are optional and to help you practice. You can work o
 ### Morning lab time:
 - Lightning exercises from live code
 - [Variables and Data Types practice exercises](https://github.com/NewForce-at-Mountwest/foundations-course/blob/master/chapters/VARIABLES_AND_DATATYPES.md)
-- [Objects as things practice exercises](https://github.com/NewForce-at-Mountwest/client-side-mastery/blob/master/book-2-the-neophyte/chapters/JS_OBJECTS.md)
+- [Objects practice exercises](https://github.com/NewForce-at-Mountwest/client-side-mastery/blob/master/book-2-the-neophyte/chapters/JS_OBJECTS.md)
 - [Daily Journal Part 2](https://github.com/NewForce-at-Mountwest/client-side-mastery/blob/master/book-2-the-neophyte/chapters/DAILY_JOURNAL_OBJECT_DOM.md)
 
 ### Afternoon lab time:
